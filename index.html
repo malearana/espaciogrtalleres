@@ -717,8 +717,7 @@
             <div class="contacto-container">
                 <div class="contacto-form">
                     <form id="contactForm">
-                 <!--  <form>form  action="https://formspree.io/f/mblabdgl"  method="POST"> -->
-                        <div class="form-group">
+                       <div class="form-group">
                             <label for="nombre">Nombre</label>
                             <input type="text" id="nombre" placeholder="Tu nombre">
                         </div>
@@ -744,15 +743,15 @@
                             <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
                         </div>
 
-                          <!-- Campo oculto para el asunto -->
+                          <!-- Campo oculto para el asunto 
                               <input type="hidden" name="_subject" value="Nuevo mensaje desde ESPACIO GR">
   
-                          <!-- Campo anti-spam (debe estar vacío) -->
-                                  <input type="text" name="_gotcha" style="display:none">
+                          Campo anti-spam (debe estar vacío) 
+                                  <input type="text" name="_gotcha" style="display:none">  -->
                         <button type="submit" class="enviar-btn">Enviar Mensaje</button>
                     </form>
 
-                    <script>
+<script>
 document.getElementById('contactForm').addEventListener('submit', async function(e) {
   e.preventDefault();
   
@@ -886,6 +885,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
     </script>
 </body>
 </html>
+
 
 
 
