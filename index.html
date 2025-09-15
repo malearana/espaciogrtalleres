@@ -155,16 +155,25 @@
             box-shadow: 0 15px 30px rgba(0,0,0,0.15);
         }
         
+      
         .taller-img {
-            height: 180px;
-            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 3rem;
-        }
-        
+    height: 200px; /* Altura fija para todas las imágenes */
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+    overflow: hidden; /* Para asegurar que nada se desborde */
+}
+
+/* Estilo para cuando uses imágenes reales */
+.taller-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Esto hace que la imagen cubra el espacio manteniendo su proporción */
+    object-position: center; /* Centra la imagen */
+}
         .taller-info {
             padding: 25px;
         }
@@ -610,7 +619,7 @@
                     </div>
                 </div>
                 
-                <div class="taller-card animate">
+                <div class="taller-card">
                     <div class="taller-img">
                         <div class="taller-img"><img src="images/espejoencordado" alt="Encordado y Tapicería"></div>
 
